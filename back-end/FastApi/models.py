@@ -1,8 +1,18 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List, Optional
+import uuid
 
 class UserProfile(BaseModel):
-    user_id: str  # Unique identifier for the user
+    user_id: str = Field(default_factory=lambda:str(uuid.uuid4())) # Unique identifier for the user
+    name: str  # User's name
+    email: str  # User's email address
+    highest_qualification: str  # User's highest qualification
+    interests: List[str]  # List of user's interests
+    skills: List[str]  # List of user's skills
+    cv: Optional[str]  # Link to user's CV or raw CV text
+    career_paths: Optional[List[str]]  # Suggested career paths for the user
+
+class UserCreate(BaseModel):
     name: str  # User's name
     email: str  # User's email address
     highest_qualification: str  # User's highest qualification
