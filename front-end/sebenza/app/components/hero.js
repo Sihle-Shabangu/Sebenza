@@ -32,7 +32,7 @@ export default function HeroSection() {
 
         {/* This is the image part */}
 
-        <Image className='' quality={100} src={HeroImage} alt="Hero Image"/>
+        <Image className='' quality={100} src={HeroImage} alt="Hero Image" priority/>
 
     </div>
   )
