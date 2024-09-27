@@ -12,7 +12,7 @@ export default function HeroSection() {
         <div className='flex flex-row justify-between'>
             <div>
                 <div className='bg-slate-50 w-2/3 min-w-full h-48 m-5 rounded p-6'>
-                    <h2 className='text-gray-900 text-5xl poppins font-medium'>Good Evening, Sizo.</h2>
+                    <h2 className='text-gray-900 text-5xl poppins font-medium'>Good Evening, Michael.</h2>
                     <p className='text-teal-900 text-2xl mt-9 poppins font-light'>28th September 2024</p>
                 </div>
 
