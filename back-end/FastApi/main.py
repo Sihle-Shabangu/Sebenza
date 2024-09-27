@@ -1,10 +1,6 @@
 from fastapi import FastAPI, HTTPException
-from motor.motor_asyncio import AsyncIOMotorClient
 from models import UserProfile, CV, CareerPath, Company, Feedback
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
+from routes.user_routes import router as user_router
 
 
 app = FastAPI(
@@ -24,13 +20,9 @@ app = FastAPI(
     },
 )
 
-# Connect to MongoDB
-MONGODB_URL = os.getenv("MONGODB_URL")
-if not MONGODB_URL:
-    raise ValueError("MongoDB not configured")
-client = AsyncIOMotorClient(MONGODB_URL)
-db = client.careerbot
 
-@app.get("/")
-async def root():
-    return {"message": "Chatbot API"}
+app.include_router(user_router, prefix="/users", tags=["users"])
+
+@app.get("/", tags=["root"])
+async def read_root():
+    return {"message": "Welcome to CareerBot API!"}
