@@ -25,10 +25,10 @@ app = FastAPI(
 )
 
 # Connect to MongoDB
-MONGO_DETAILS = os.getenv("MONGO_DETAILS")
-if not MONGO_DETAILS:
+MONGODB_URL = os.getenv("MONGODB_URL")
+if not MONGODB_URL:
     raise ValueError("MongoDB not configured")
-client = AsyncIOMotorClient(MONGO_DETAILS)
+client = AsyncIOMotorClient(MONGODB_URL)
 db = client.careerbot
 
 @app.get("/")
