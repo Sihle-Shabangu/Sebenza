@@ -1,9 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
+
+import HeroImage from '../assets/hero.png'
 
 export default function HeroSection() {
   return (
-    <div>
-        <div className='flex flex-row max-w-[1440px] m-auto justify-between'>
+    <div className='max-w-[1440px] m-auto'>
+
+        {/* This is the top part */}
+
+        <div className='flex flex-row justify-between'>
             <div>
                 <div className='bg-slate-50 w-2/3 min-w-full h-48 m-5 rounded p-6'>
                     <h2 className='text-gray-900 text-5xl poppins font-medium'>Good Evening, Sizo.</h2>
@@ -23,6 +29,11 @@ export default function HeroSection() {
                 <li className='bg-slate-50 w-20 h-10 rounded flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer m-5'>Profile</li>
             </ul>
         </div>
+
+        {/* This is the image part */}
+
+        <Image className='' quality={100} src={HeroImage} alt="Hero Image"/>
+
     </div>
   )
 }
