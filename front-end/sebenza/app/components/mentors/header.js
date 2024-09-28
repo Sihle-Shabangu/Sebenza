@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { IoTimerOutline } from "react-icons/io5";
@@ -12,7 +13,7 @@ export default function MentorsHeader() {
             </h2>
 
         <div className='flex items-center justify-around flex-row w-fit m-auto'>
-        <span className='bg-slate-50 w-36 h-10 rounded-full flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer m-5'>Register</span>
+        <span className='bg-slate-50 w-36 h-10 rounded-full flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer m-5'><Link href={"/mentors/register"}>Register</Link></span>
         <span className='bg-slate-900 w-36 h-10 rounded-full flex flex-row items-center justify-center text-slate-50 font-normal poppins cursor-pointer m-5 '>Learn More <span><FaArrowRightLong className='ml-3'/></span></span>
         </div>
 
