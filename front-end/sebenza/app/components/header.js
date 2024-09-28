@@ -12,7 +12,7 @@ export default function Header() {
             <li className='cursor-pointer  hover:text-teal-500 manrope font-semibold'>Explore</li>
             <li className='cursor-pointer  hover:text-teal-500 manrope font-semibold'><Link href={"/mentors"}>Mentors</Link></li>
             <li className='cursor-pointer  hover:text-teal-500 manrope font-semibold'>Career Guidance</li>
-            <li className='cursor-pointer  hover:text-teal-500 manrope font-semibold'><GrSearch size={23}/></li>
+            <li className='cursor-pointer  hover:text-teal-500 manrope font-semibold'><Link href={"/user"}>Profile</Link></li>
         </ul>
     </div>
   )

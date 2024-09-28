@@ -22,13 +22,6 @@ export default function HeroSection() {
                 <div className='bg-green-400 w-20 h-10 rounded flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer'><Link href={"/mentors/mentees"}>Track</Link></div>
                 </div>
             </div>
-
-            <ul className='w-fit flex flex-row justify-evenly items-center h-fit'>
-                <li className=' w-fit h-10 rounded flex flex-row items-center justify-center text-white font-normal poppins cursor-pointer m-5'>Information</li>
-                <li className='w-fit h-10 rounded flex flex-row items-center justify-center text-white font-normal poppins cursor-pointer m-5'>Community</li>
-                <li className='bg-slate-50 w-20 h-10 rounded flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer m-5'>Logout</li>
-                <li className='bg-slate-50 w-20 h-10 rounded flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer m-5'><Link href={"/user"}>Profile</Link></li>
-            </ul>
         </div>
 
         {/* This is the image part */}
