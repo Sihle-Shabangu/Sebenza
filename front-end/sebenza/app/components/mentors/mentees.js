@@ -11,36 +11,36 @@ export default function Mentees() {
     {/* Mentee Profile 1 */}
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h3 className="text-xl font-semibold text-gray-800 mb-2">Sarah Johnson</h3>
-      <p className="text-gray-600 mb-2"><span className="font-semibold">Progress:</span> 70%</p>
-      <p className="text-gray-600 mb-4">Last Feedback: "Great improvement in your coding skills!"</p>
+      <p className="text-gray-600 mb-2"><span className="font-semibold">{'Progress:'}</span> 70%</p>
+      <p className="text-gray-600 mb-4">{'Last Feedback: "Great improvement in your coding skills!"'}</p>
     </div>
 
     {/* Mentee Profile 2 */}
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h3 className="text-xl font-semibold text-gray-800 mb-2">Michael Brown</h3>
-      <p className="text-gray-600 mb-2"><span className="font-semibold">Progress:</span> 50%</p>
-      <p className="text-gray-600 mb-4">Last Feedback: "Focus on project management techniques."</p>
+      <p className="text-gray-600 mb-2"><span className="font-semibold">{"Progress:"}</span> 50%</p>
+      <p className="text-gray-600 mb-4">{'Last Feedback: "Focus on project management techniques."'}</p>
     </div>
 
     {/* Mentee Profile 3 */}
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h3 className="text-xl font-semibold text-gray-800 mb-2">Emily Davis</h3>
-      <p className="text-gray-600 mb-2"><span className="font-semibold">Progress:</span> 80%</p>
-      <p className="text-gray-600 mb-4">Last Feedback: "Excellent presentation skills!"</p>
+      <p className="text-gray-600 mb-2"><span className="font-semibold">{"Progress:"}</span> 80%</p>
+      <p className="text-gray-600 mb-4">{'Last Feedback: "Excellent presentation skills!"'}</p>
     </div>
 
     {/* Mentee Profile 4 */}
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h3 className="text-xl font-semibold text-gray-800 mb-2">David Wilson</h3>
-      <p className="text-gray-600 mb-2"><span className="font-semibold">Progress:</span> 60%</p>
-      <p className="text-gray-600 mb-4">Last Feedback: "Keep practicing your coding challenges."</p>
+      <p className="text-gray-600 mb-2"><span className="font-semibold">{"Progress:"}</span> 60%</p>
+      <p className="text-gray-600 mb-4">{'Last Feedback: "Keep practicing your coding challenges."'}</p>
     </div>
 
     {/* Mentee Profile 5 */}
     <div className="bg-white rounded-lg shadow-lg p-6">
       <h3 className="text-xl font-semibold text-gray-800 mb-2">Jessica Martinez</h3>
-      <p className="text-gray-600 mb-2"><span className="font-semibold">Progress:</span> 75%</p>
-      <p className="text-gray-600 mb-4">Last Feedback: "Great job on your recent project!"</p>
+      <p className="text-gray-600 mb-2"><span className="font-semibold">{"Progress:"}</span> 75%</p>
+      <p className="text-gray-600 mb-4">{'Last Feedback: "Great job on your recent project!"'}</p>
     </div>
   </div>
 </div>

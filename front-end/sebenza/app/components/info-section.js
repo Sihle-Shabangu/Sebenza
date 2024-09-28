@@ -9,12 +9,12 @@ export default function InfoSection() {
     <div className='mt-5 max-w-[1440px] m-auto relative'>
         <div className='flex flex-col justify-center items-center'>
             <Image src={lgImage1}/>
-            <p className='text-2xl poppins absolute right-11 w-1/2'>“An investment in knowledge pays the best interest” </p>
+            <p className='text-2xl poppins absolute right-11 w-1/2'>{'“An investment in knowledge pays the best interest”'} </p>
         </div>
 
         <div>
             <h2 className='text-2xl poppins text-center font-bold mt-5'>DID YOU KNOW?</h2>
-            <p className='text-xl poppins w-1/2 m-auto text-center mt-5'>In South Africa, unemployment remains a significant challenge, with a rate that often exceeds 30%. Factors contributing to this high rate include economic instability, skills mismatches, and structural inequalities. The government has implemented various initiatives to address the issue, but progress remains slow.</p>
+            <p className='text-xl poppins w-1/2 m-auto text-center mt-5'>{'In South Africa, unemployment remains a significant challenge, with a rate that often exceeds 30%. Factors contributing to this high rate include economic instability, skills mismatches, and structural inequalities. The government has implemented various initiatives to address the issue, but progress remains slow.'}</p>
         </div>
 
         <div >
