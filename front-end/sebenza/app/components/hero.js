@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 import HeroImage from '../assets/hero.png'
+import Link from 'next/link'
 
 export default function HeroSection() {
   return (
@@ -18,7 +19,7 @@ export default function HeroSection() {
 
                 <div className='bg-slate-50 w-2/3 min-w-full h-20 m-5 rounded flex flex-row items-center justify-between pr-5'>
                 <p className='text-gray-900 text-md ml-3 poppins'>Register your Details. that way we can keep track of your interests and deliver your desired content</p>
-                <div className='bg-green-400 w-20 h-10 rounded flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer'>Track</div>
+                <div className='bg-green-400 w-20 h-10 rounded flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer'><Link href={"/mentors/mentees"}>Track</Link></div>
                 </div>
             </div>
 
@@ -26,7 +27,7 @@ export default function HeroSection() {
                 <li className=' w-fit h-10 rounded flex flex-row items-center justify-center text-white font-normal poppins cursor-pointer m-5'>Information</li>
                 <li className='w-fit h-10 rounded flex flex-row items-center justify-center text-white font-normal poppins cursor-pointer m-5'>Community</li>
                 <li className='bg-slate-50 w-20 h-10 rounded flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer m-5'>Logout</li>
-                <li className='bg-slate-50 w-20 h-10 rounded flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer m-5'>Profile</li>
+                <li className='bg-slate-50 w-20 h-10 rounded flex flex-row items-center justify-center text-gray-900 font-normal poppins cursor-pointer m-5'><Link href={"/user"}>Profile</Link></li>
             </ul>
         </div>
 
